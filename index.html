@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Course</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <ul class="navigation-list">
+        <li class="navigation-item"><a class="post" href="#">Posts</a></li>
+        <li class="navigation-item">
+          <a class="products" href="#">Products</a>
+        </li>
+        <li class="navigation-item">
+          <a class="contactus" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </header>
+    <aside class="aside1">
+      <!-- <p>My super awesome sidebar</p> -->
+      <h3>Task Menu</h3>
+      <button type="button">To Do</button><br />
+      <button type="button">In Progress</button><br />
+      <button type="button">Done</button><br />
+      <button type="button">Report</button><br />
+      <button type="button" onclick="openForm()">Add New Form</button><br />
+      <button type="button">Delete Form</button>
+    </aside>
+
+    <aside class="aside2">
+      <!-- <p>My super awesome sidebar</p> -->
+      <h3>Task Menu</h3>
+      <button type="button">TD</button><br />
+      <button type="button">InP</button><br />
+      <button type="button">Don</button><br />
+      <button type="button">Rep</button><br />
+      <button type="button">ANF</button><br />
+      <button type="button">Del</button>
+    </aside>
+
+    <main id="main-area">
+      <div class="cards">
+        <div class="card">
+          <!-- <img src="./images/task1-img.png" alt="pic1" class="card__image" /> -->
+          <div class="card__content">
+            <h5>Task Name1</h5>
+            <p>Make Briyani</p>
+            <h5>Description</h5>
+            <p>Sample</p>
+            <h5>Assigned-To</h5>
+            <p>arms</p>
+            <h5>Due Date</h5>
+            <p>2021-09-21</p>
+            <h5>Status</h5>
+            <p>In-Progress</p>
+          </div>
+        </div>
+        <!-- -------------------------->
+        <div class="card">
+          <!-- <img src="./images/task1-img.png" alt="pic1" class="card__image" /> -->
+          <div class="card__content">
+            <h5>Task Name2</h5>
+            <p>Make Briyani</p>
+            <h5>Description</h5>
+            <p>Sample</p>
+            <h5>Assigned-To</h5>
+            <p>arms</p>
+            <h5>Due Date</h5>
+            <p>2021-09-21</p>
+            <h5>Status</h5>
+            <p>In-Progress</p>
+          </div>
+        </div>
+        <!-- ----------------------------------------------- -->
+        <div class="card">
+          <!-- <img src="./images/task1-img.png" alt="pic1" class="card__image" /> -->
+          <div class="card__content">
+            <h5>Task Name3</h5>
+            <p>Make Briyani</p>
+            <h5>Description</h5>
+            <p>Sample</p>
+            <h5>Assigned-To</h5>
+            <p>arms</p>
+            <h5>Due Date</h5>
+            <p>2021-09-21</p>
+            <h5>Status</h5>
+            <p>In-Progress</p>
+          </div>
+        </div>
+        <!-- ---------------------------------- -->
+        <!-- ----------------------------------------------- -->
+        <div class="card">
+          <!-- <img src="./images/task1-img.png" alt="pic1" class="card__image" /> -->
+          <div class="card__content">
+            <h5>Task Name4</h5>
+            <p>Make Briyani</p>
+            <h5>Description</h5>
+            <p>Sample</p>
+            <h5>Assigned-To</h5>
+            <p>arms</p>
+            <h5>Due Date</h5>
+            <p>2021-09-21</p>
+            <h5>Status</h5>
+            <p>In-Progress</p>
+          </div>
+        </div>
+        <!-- ---------------------------------- -->
+        <!-- ----------------------------------------------- -->
+        <div class="card">
+          <!-- <img src="./images/task1-img.png" alt="pic1" class="card__image" /> -->
+          <div class="card__content">
+            <h5>Task Name5</h5>
+            <p>Make Briyani</p>
+            <h5>Description</h5>
+            <p>Sample</p>
+            <h5>Assigned-To</h5>
+            <p>arms</p>
+            <h5>Due Date</h5>
+            <p>2021-09-21</p>
+            <h5>Status</h5>
+            <p>In-Progress</p>
+          </div>
+        </div>
+        <!-- ---------------------------------- -->
+        <!-- ----------------------------------------------- -->
+        <div class="card">
+          <!-- <img src="./images/task1-img.png" alt="pic1" class="card__image" /> -->
+          <div class="card__content">
+            <h5>Task Name5</h5>
+            <p>Make Briyani</p>
+            <h5>Description</h5>
+            <p>Sample</p>
+            <h5>Assigned-To</h5>
+            <p>arms</p>
+            <h5>Due Date</h5>
+            <p>2021-09-21</p>
+            <h5>Status</h5>
+            <p>In-Progress</p>
+          </div>
+        </div>
+        <!-- ---------------------------------- -->
+        <!-- ----------------------------------------------- -->
+        <div class="card">
+          <!-- <img src="./images/task1-img.png" alt="pic1" class="card__image" /> -->
+          <div class="card__content">
+            <h5>Task Name5</h5>
+            <p>Make Briyani</p>
+            <h5>Description</h5>
+            <p>Sample</p>
+            <h5>Assigned-To</h5>
+            <p>arms</p>
+            <h5>Due Date</h5>
+            <p>2021-09-21</p>
+            <h5>Status</h5>
+            <p>In-Progress</p>
+          </div>
+        </div>
+        <!-- ---------------------------------- -->
+      </div>
+    </main>
+    <!-- popup-form-start -->
+
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>New Task Form</h1>
+
+        <label for="tname"><b>Task Name</b></label>
+        <input type="text" placeholder="Task Name" name="tname" required />
+
+        <label for="Date"><b>Due Date</b></label>
+        <input type="date" placeholder="Due Date" name="date" required /><br />
+
+        <label for="assigned"><b>Assigned To</b></label>
+        <input type="text" placeholder="Assigned To" name="assigned" required />
+
+        <label for="desc"><b>Description</b></label>
+        <textarea
+          type="textarea"
+          placeholder="Description"
+          name="desc"
+          rows="5"
+          cols="50"
+          required
+        ></textarea>
+
+        <label for="status">Status</label>
+        <select id="status" name="status">
+          <option value="To-Do">To-Do</option>
+          <option value="In-Progress">In-Progress</option>
+          <option value="Review">Review</option>
+          <option value="Done">Done</option></select
+        ><br />
+
+        <button type="button" class="btn-cancel" onclick="closeForm()">
+          Cancel
+        </button>
+        <button type="button" class="btn-save" onclick="SaveForm()">
+          Save
+        </button>
+      </form>
+    </div>
+
+    <!-- popup-form-end -->
+    <footer>
+      <ul class="navigation-list">
+        <li class="navigation-item"><a href="#">Terms of Use</a></li>
+        <li class="navigation-item"><a href="#">Support</a></li>
+      </ul>
+    </footer>
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+        document.getElementById("main-area").style.display = "none";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+        document.getElementById("main-area").style.display = "grid";
+      }
+    </script>
+  </body>
+</html>
